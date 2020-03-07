@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_light_pressed"
+    tools:context="am.romanbalayan.chatapp.User.UserProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/user_profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="521dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="210dp"
+        android:fadingEdge="none"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/u1" />
+
+    <TextView
+        android:id="@+id/user_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:text="@string/name_surname"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/user_profile_send"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="@string/add_to_friends"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/user_profile_decline"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="@string/decline_request"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/user_profile_chat"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="85dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="OPEN CHAT"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

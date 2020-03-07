@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_tool_bar_thumb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/u1"
+            app:civ_border_color="#FFEB3B"
+            app:civ_border_width="2dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/chat_tool_bar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME SURNAME"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:paddingEnd="5dp"
+            android:layout_toEndOf="@id/chat_tool_bar_thumb"
+            android:layout_centerInParent="true"
+            android:paddingStart="5dp"/>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

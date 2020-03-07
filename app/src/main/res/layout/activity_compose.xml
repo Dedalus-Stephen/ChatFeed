@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="am.romanbalayan.chatapp.Feed.Compose.ComposeActivity"
+    android:background="#181A19">
+
+    <include layout="@layout/compose_toolbar" android:id="@+id/compose_bar"/>
+
+    <EditText
+        android:id="@+id/compose_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compose_bar"
+        android:hint="What's new?"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/compose_text"
+        android:id="@+id/compose_image"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxWidth="500dp"
+        android:text="@string/click_to_add_image"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="36sp"
+        android:id="@+id/compose_hint"/>
+
+
+</RelativeLayout>

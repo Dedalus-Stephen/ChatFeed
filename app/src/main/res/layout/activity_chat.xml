@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="am.romanbalayan.chatapp.Chat.ChatActivity"
+    android:background="#181A19">
+
+    <include layout="@layout/chat_toolbar" android:id="@+id/chat_act_bar"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="628dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:layout_toEndOf="@id/chat_act_bar"
+        android:layout_above="@id/message_tools"
+        android:id="@+id/messages_rec_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:id="@+id/message_tools">
+
+        <ImageButton
+            android:id="@+id/media_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:src="@drawable/baseline_add_black_24" />
+
+        <EditText
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@android:color/white"
+            android:hint="@string/hello_how_u_dooin"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:inputType="textLongMessage"
+            />
+
+        <ImageButton
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:src="@drawable/baseline_send_black_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/date_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/border_date_item"
+        android:textColor="#767877"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/preSentImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/message_tools"
+        android:layout_alignParentStart="true"
+        android:paddingTop="15dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

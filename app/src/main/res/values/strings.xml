@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="log_in_to_existing_account">Log in to existing account</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="sign_up_to_chatapp">Sign Up to ChatApp</string>
+    <string name="users">Users</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_image">CHANGE IMAGE</string>
+    <string name="change_status">CHANGE STATUS</string>
+    <string name="settings_log_out">Log Out</string>
+    <string name="change_avatar">Change Avatar</string>
+    <string name="settings_change_name">Change Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="search_users">Search Users</string>
+    <string name="add_to_friends">ADD TO FRIENDS</string>
+    <string name="decline_request">DELETE FRIEND</string>
+    <string name="name_surname">NAME SURNAME</string>
+    <string name="name_surname2">NAME SURNAME</string>
+    <string name="hello_how_u_dooin">Ohayo, how u dooin?</string>
+    <string name="click_to_add_image">CLICK TO ADD IMAGE</string>
+</resources>

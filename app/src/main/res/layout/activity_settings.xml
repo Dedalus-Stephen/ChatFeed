@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="am.romanbalayan.chatapp.Settings.SettingsActivity"
+    android:background="#000000">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="215dp"
+        android:layout_height="274dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/u1"
+        app:civ_border_color="#F52887"
+        app:civ_border_width="2dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+    <include layout = "@layout/settings_toolbar" android:id="@+id/settings_tool_bar"/>
+
+    <TextView
+        android:id="@+id/settings_log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="@string/settings_log_out"
+        android:textColor="@color/colorAccent"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/settings_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="298dp"
+        android:text="@string/name_surname2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="26sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/settings_change_name"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="@string/settings_change_name"
+        android:textColor="@android:color/white"
+        android:visibility="visible" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/settings_change_name_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@id/change_name_done_btn"
+        android:layout_marginBottom="180dp"
+        android:layout_toStartOf="@id/change_name_done_btn"
+        android:background="@android:color/white"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+
+    <ImageButton
+        android:id="@+id/change_name_done_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="180dp"
+        android:background="#000000"
+        android:src="@drawable/donepink24"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/settings_change_avatar"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="114dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="@string/change_avatar"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

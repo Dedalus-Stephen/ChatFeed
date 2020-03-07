@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="am.romanbalayan.chatapp.Friends.SearchFriends">
+
+    <include layout="@layout/toolbar_layout" android:id="@+id/search_friends_toolbar"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/found_user_list"
+        android:layout_width="408dp"
+        android:layout_height="607dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="130dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_friends_name_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="57dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search_friends_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:hint="@string/enter_name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>

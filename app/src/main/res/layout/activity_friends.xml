@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="am.romanbalayan.chatapp.Friends.FriendsActivity"
+    android:background="#ffffff">
+
+    <include layout = "@layout/main_act_toolbar" android:id="@+id/friends_tool_bar"/>
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/search_users"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friends_rec_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="117dp"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/white" />
+
+
+</RelativeLayout>
