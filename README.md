@@ -39,3 +39,6 @@
 
 ![chat](https://sun9-2.userapi.com/c206516/v206516084/99940/3n446OXS3ak.jpg)
 <br/>
+
+
+*App also supports notifications for new friend requests. To activate that function you should uncomment the FirebaseMessages class and deploy **index.js** file to your firebase.*
