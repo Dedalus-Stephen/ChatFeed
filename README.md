@@ -25,7 +25,7 @@
 ![search](https://sun9-63.userapi.com/c206516/v206516084/99922/oZJEbmlXBwM.jpg)
 <br/>
 
-**User profile**
+**User profile:**
 
 ![profile](https://sun9-5.userapi.com/c206516/v206516084/99932/wmCT7uPhUq0.jpg)
 <br/>
